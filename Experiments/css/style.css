@@ -1,0 +1,193 @@
+{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head {
+	background-color: #0800ff;
+    display: inline-block;
+    width: 100%;
+}
+.head img{
+    float: left;
+    position: relative;
+    width: 80px;
+    left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.head h1{
+	height: 90px;
+	margin:0px;
+	text-align: center;
+    position: relative;
+    top: 18px;
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 2px 2px 2px #000;
+    letter-spacing: 1px;
+}
+.main {
+    padding-top: 10px;
+}
+.main h2 {
+    font-size: 2em;
+    text-align: center;
+    color: rgb(167, 8, 8);
+    text-shadow: 1px 1px 1px #000;
+}
+.main hr {
+    width: 20%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #154360;
+}
+.navbar button {
+    background-color: #154360; 
+    border: none;
+    color: white;
+    width:40%;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin: 20px 65px;
+    text-shadow: 1px 1px 1px  rgb(167, 8, 8);
+}
+.navbar button:hover{
+    opacity: .9;
+}
+.detail {
+    border: 2px solid black;
+    margin: 20px; 
+	overflow: auto;
+}
+.detail table {
+    width: 100%; 
+}
+.detail table tr th {
+    font-size: 25px;
+    text-align: center;
+    background-color:#a70808;
+    color: #FFF;
+    position: sticky;
+    top: 0;
+}
+th, td {
+    padding: 20px;
+}
+.detail table tr td {
+    font-size: 20px;
+    text-align: center;
+}
+.detail table tr:nth-child(odd){
+    background-color: rgba(252, 72, 72, 0.315);
+}
+.detail table tr td a {
+    color: red;
+    text-decoration: none;
+    animation: changecolorfrd 1s infinite;
+}
+@keyframes changecolorfrd{
+        0%{color: red;}
+        25%{color:#154360;}
+        50%{color: red;}
+        75%{color: #154360;}
+        100%{color:red;}
+}
+#lab {
+    display: block;
+}
+#lec {
+    display: block;
+}
+footer {
+    background-color: #000;
+    color: rgb(216, 210, 210); 
+    padding-bottom: 100px;
+}
+.personal {
+    font-size: 20px;
+    letter-spacing: 1px;
+
+}
+#enroll {
+    float: left;
+    position: relative;
+    left: 20px;
+    padding-top: 30px;
+}
+#devlop {
+    position: relative;
+    float: right;
+    padding-top: 30px;
+    right: 30px;
+}
+#devlop span {
+    color: red;
+    font-size: 22px;
+}
+.copyright p{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+td span{
+    color: blue;
+    animation: changecolornew 1s infinite;
+    font-weight: bold;
+    margin-left: 25px;
+}
+	.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+	.sidenav a ,.btn{
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #818181;
+	display: block;
+	border: none;
+	background: none;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+}
+
+	.sidenav a:hover,.btn:hover {
+	color: #f1f1f1;
+}
+
+	.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 10px;}
+  .sidenav a {font-size: 18px;}
+}
+@keyframes changecolornew{
+        0%{color: red;}
+        50%{color: black}
+        100%{color:blue;}
+}
